@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html>  
+    <head>
+            <meta charset="utf-8">
+                <title>Zapreminaa valjka</title>
+    </head>
+    <script>
+        function math() {
+	    var radius = document.getElementById("radius").value;
+	    var height = document.getElementById("height").value;
+	    var out = document.getElementById("out");
+	    out.value = Math.PI*radius*radius*height;
+}
+    </script>
+        <body>
+            <label>Sirina:</label>
+            <br>
+            <input id="radius" type="number" onchange="math()" value=1>
+            <br>
+            <label>Visina:</label>
+            <br>
+            <input id="height" type="number" onchange="math()" value=1>
+            <br>
+            <label>Zapremina:</label>
+            <br>
+            <input id="out" type="number" disabled value="3.1415926535898">
+            <br>
+        </body>
+    </html>
